@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5th ICONIE 2026 | International Conference on Islamic Economics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #467578 0%, #075985 100%);
+        }
+        .gradient-teal {
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+
+    <!-- LAYOUT 1: HEADER & HERO -->
+    <header class="gradient-bg text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4">
+            <!-- Logo Bar -->
+            <div class="flex justify-between items-center py-4 border-b border-white/20">
+                <div class="flex items-center space-x-4">
+                    <img src="assets/logo/logo-uis-2025.png" class="h-12">
+                    <img src="assets/logo/ircief-logo.png" class="h-12">
+                    <img src="assets/logo/bibf-logo.png" class="h-12">
+                </div>
+                <ul class="flex flex-wrap justify-center space-x-6 text-base font-medium">
+                    <li><a href="iconie-landing-page.html#home" class="hover:text-teal-300 transition">Home</a></li>
+                    <li><a href="iconie-landing-page.html#about" class="hover:text-teal-300 transition">Introduction</a></li>
+                    <li><a href="iconie-landing-page.html#theme" class="hover:text-teal-300 transition">Theme</a></li>
+                    <li><a href="iconie-landing-page.html#dates" class="hover:text-teal-300 transition">Important Dates</a></li>
+                    <li><a href="iconie-landing-page.html#fees" class="hover:text-teal-300 transition">Conference Fee</a></li>
+                    <li><a href="iconie-landing-page.html#fees" class="hover:text-teal-300 transition">Tentative</a></li>
+                    <li><a href="iconie-landing-page.html#venue" class="hover:text-teal-300 transition">Venue</a></li>
+                    <li><a href="iconie-download.html" class="hover:text-teal-300 transition">Download</a></li>
+                </ul>
+                <div class="text-white-500 font-bold text-l italic">
+                    <button class="inline-block bg-red-600 hover:bg-teal-600 text-white px-2 py-2 rounded-lg  transition transform hover:scale-105"> <a href="#">Register / Submission</a>
+                    </button> 
+                </div>
+            </div>
+        </div>
+    </header>
+
+   <!-- Abstract and Download -->
+<section id="downloads" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        
+        <!-- Templates Section -->
+        <div class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-900 mb-6">
+                <i class="fas fa-file-download text-teal-500 mr-2"></i>
+                Abstract / Full Paper Template Downloads
+            </h2>
+            <div class="bg-teal-50 border-l-4 border-teal-500 p-6 rounded-lg">
+                <ul class="space-y-3">
+                    <li class="flex items-center">
+                        <i class="fas fa-file-pdf text-red-500 text-xl mr-3"></i>
+                        <span class="text-gray-700">Click here to 
+                            <a href="#" class="text-teal-600 font-semibold hover:text-teal-700 underline" download>
+                                Download Abstract Template
+                            </a>
+                        </span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-file-pdf text-red-500 text-xl mr-3"></i>
+                        <span class="text-gray-700">Click here to 
+                            <a href="#" class="text-teal-600 font-semibold hover:text-teal-700 underline" download>
+                                Download Full Paper Template
+                            </a>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Poster Section -->
+        <div>
+            <h2 class="text-3xl font-bold text-blue-900 mb-6">
+                <i class="fas fa-image text-teal-500 mr-2"></i>
+                Conference Poster
+            </h2>
+            <p class="text-gray-600 mb-4 italic">
+                <i class="fas fa-info-circle text-blue-500 mr-2"></i>
+                Click the button below to download the poster
+            </p>
+            
+            <!-- Poster Image Container -->
+            <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden">
+                <img 
+                    src="assets/images/iconie-2026-poster.jpeg" 
+                    alt="ICONIE 2026 Conference Poster" 
+                    class="w-full h-auto hover:scale-105 transition-transform duration-300 cursor-pointer"
+                    onclick="openPosterModal()"
+                />
+            </div>
+
+            <!-- Download Button -->
+            <div class="mt-6 text-center">
+                <a 
+                    href="assets/images/iconie-2026-poster.jpeg" 
+                    download="ICONIE-2026-Poster.jpg"
+                    class="inline-block bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-lg font-semibold transition shadow-lg"
+                >
+                    <i class="fas fa-download mr-2"></i>
+                    Download Poster (High Resolution)
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Poster Modal (for full-screen view) -->
+<div id="posterModal" class="hidden fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4" onclick="closePosterModal()">
+    <div class="relative max-w-6xl w-full">
+        <button 
+            class="absolute top-4 right-4 text-white text-4xl hover:text-gray-300 transition"
+            onclick="closePosterModal()"
+        >
+            <i class="fas fa-times"></i>
+        </button>
+        <img 
+            src="assets/images/iconie-2026-poster.jpeg" 
+            alt="ICONIE 2026 Poster - Full Size" 
+            class="w-full h-auto rounded-lg shadow-2xl"
+        />
+    </div>
+</div>
+
+    <script>
+        function openPosterModal() {
+            document.getElementById('posterModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Prevent scroll
+        }
+
+        function closePosterModal() {
+            document.getElementById('posterModal').classList.add('hidden');
+            document.body.style.overflow = 'auto'; // Re-enable scroll
+        }
+    </script>
+
+    <!-- FOOTER & CONTACT -->
+    <footer id="contact" class="gradient-bg text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-teal-300">CONTACT US</h3>
+                    <div class="space-y-3">
+                        <p>
+                            <i class="fas fa-envelope mr-2 text-teal-300"></i>
+                            <strong>Ms. Nawal:</strong> +6019-2070027
+                        </p>
+                        <p>
+                            <i class="fas fa-phone mr-2 text-teal-300"></i>
+                            <strong>Ms Surianom:</strong> +6019-3938404
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope mr-2 text-teal-300"></i>
+                            <a href="mailto:iconie@uis.edu.my" class="hover:text-teal-300">iconie@uis.edu.my</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Organized By -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-teal-300">ORGANIZED BY</h3>
+                    <div class="space-y-2">
+                        <p><strong>Universiti Islam Selangor (UIS)</strong></p>
+                        <p>International Research Centre of Islamic Economics & Finance (IRCIEF)</p>
+                    </div>
+                    <h3 class="text-xl font-bold mt-4 mb-2 text-teal-300">IN COLLABORATION WITH</h3>
+                    <p>Bahrain Institute of Banking and Finance (BIBF)</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-teal-300">QUICK LINKS</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="hover:text-teal-300 transition"><i class="fas fa-chevron-right mr-2"></i>About Conference</a></li>
+                        <li><a href="#theme" class="hover:text-teal-300 transition"><i class="fas fa-chevron-right mr-2"></i>Theme & Sub-themes</a></li>
+                        <li><a href="#dates" class="hover:text-teal-300 transition"><i class="fas fa-chevron-right mr-2"></i>Important Dates</a></li>
+                        <li><a href="#fees" class="hover:text-teal-300 transition"><i class="fas fa-chevron-right mr-2"></i>Conference Fee</a></li>
+                        <li><a href="#submission" class="hover:text-teal-300 transition"><i class="fas fa-chevron-right mr-2"></i>Submit Paper</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-white/20 pt-8 text-center">
+                <p>&copy; 2026 ICONIE. All Rights Reserved | Universiti Islam Selangor (UIS)</p>
+                <div class="mt-2">
+                    <a href="#" class="hover:text-teal-300 mx-2 transition">Privacy Policy</a> |
+                    <a href="#" class="hover:text-teal-300 mx-2 transition">Terms & Conditions</a> |
+                    <a href="#" class="hover:text-teal-300 mx-2 transition">Disclaimer</a>
+                </div>
+                <div class="mt-4 flex justify-center space-x-4">
+                    <a href="#" class="text-white hover:text-teal-300 transition" aria-label="Facebook">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-teal-300 transition" aria-label="Twitter">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-teal-300 transition" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-teal-300 transition" aria-label="Instagram">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
