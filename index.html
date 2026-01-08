@@ -101,33 +101,133 @@
 </head>
 <body class="font-sans text-gray-800">
     <!-- HEADER -->
-    <header class="gradient-luxury text-white sticky top-0 z-50 shadow-2xl border-b-2 border-gold">
+   <header class="gradient-luxury text-white sticky top-0 z-50 shadow-2xl border-b-2 border-gold">
         <div class="container mx-auto px-4">
             <!-- Logo Bar -->
-            <div class="flex justify-between items-center py-4 border-b border-gold/30">
-                <div class="flex items-center space-x-4">
-                    <img src="assets/logo/logo-uis-2025.png" class="h-12">
-                    <img src="assets/logo/ircief-logo.png" class="h-12">
-                    <img src="assets/logo/bibf-logo.png" class="h-12">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logos -->
+                <div class="flex items-center space-x-2 md:space-x-4">
+                    <img src="assets/logo/logo-uis-2025.png" class="h-8 md:h-12">
+                    <img src="assets/logo/ircief-logo.png" class="h-8 md:h-12">
+                    <img src="assets/logo/bibf-logo.png" class="h-8 md:h-12">
                 </div>
-               <ul class="flex flex-wrap justify-center space-x-6 text-base font-medium">
-                    <li><a href="index.html#home" class="hover-gold transition">Home</a></li>
-                    <li><a href="index.html#background" class="hover-gold transition">Background</a></li>
-                    <li><a href="index.html#theme" class="hover-gold transition">Theme</a></li>
-                    <li><a href="index.html#dates" class="hover-gold transition">Important Dates</a></li>
-                    <li><a href="index.html#fees" class="hover-gold transition">Conference Fee</a></li>
-                    <li><a href="index.html#tentative" class="hover-gold transition">Tentative</a></li>
-                    <li><a href="index.html#venue" class="hover-gold transition">Venue</a></li>
-                    <li><a href="iconie-download.html" class="hover-gold transition">Download</a></li>
-                </ul>
-                <div>
-                    <button class="gradient-gold text-deep-black px-6 py-3 rounded-lg font-bold transition transform hover:scale-105 hover:shadow-lg hover:shadow-gold/50">
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-6">
+                    <ul class="flex space-x-6 text-base font-medium">
+                        <li><a href="index.html#home" class="hover-gold transition">Home</a></li>
+                        <li><a href="index.html#background" class="hover-gold transition">Background</a></li>
+                        <li><a href="index.html#theme" class="hover-gold transition">Theme</a></li>
+                        <li><a href="index.html#dates" class="hover-gold transition">Important Dates</a></li>
+                        <li><a href="index.html#fees" class="hover-gold transition">Conference Fee</a></li>
+                        <li><a href="index.html#tentative" class="hover-gold transition">Tentative</a></li>
+                        <li><a href="index.html#venue" class="hover-gold transition">Venue</a></li>
+                        <li><a href="iconie-download.html" class="hover-gold transition">Download</a></li>
+                    </ul>
+                    <button class="gradient-gold text-deep-black px-6 py-3 rounded-lg font-bold transition transform hover:scale-105 hover:shadow-lg hover:shadow-gold/50 whitespace-nowrap">
                         <i class="fas fa-user-plus mr-2"></i>Register / Submission
-                    </button> 
-                </div>
+                    </button>
+                </nav>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobile-menu-button" class="lg:hidden text-white focus:outline-none" onclick="toggleMobileMenu()">
+                    <svg id="hamburger-icon" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <svg id="close-icon" class="w-8 h-8 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu (Hidden by default) -->
+            <div id="mobile-menu" class="hidden lg:hidden border-t border-gold/30 py-4">
+                <ul class="space-y-3">
+                    <li>
+                        <a href="index.html#home" class="block py-2 px-4 hover:bg-gold/20 rounded transition">
+                            <i class="fas fa-home text-gold mr-3"></i>Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#background" class="block py-2 px-4 hover:bg-gold/20 rounded transition">
+                            <i class="fas fa-info-circle text-gold mr-3"></i>Background
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#theme" class="block py-2 px-4 hover:bg-gold/20 rounded transition">
+                            <i class="fas fa-lightbulb text-gold mr-3"></i>Theme
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#dates" class="block py-2 px-4 hover:bg-gold/20 rounded transition">
+                            <i class="fas fa-calendar text-gold mr-3"></i>Important Dates
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#fees" class="block py-2 px-4 hover:bg-gold/20 rounded transition">
+                            <i class="fas fa-dollar-sign text-gold mr-3"></i>Conference Fee
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#tentative" class="block py-2 px-4 hover:bg-gold/20 rounded transition">
+                            <i class="fas fa-clock text-gold mr-3"></i>Tentative
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#venue" class="block py-2 px-4 hover:bg-gold/20 rounded transition">
+                            <i class="fas fa-map-marker-alt text-gold mr-3"></i>Venue
+                        </a>
+                    </li>
+                    <li>
+                        <a href="iconie-download.html" class="block py-2 px-4 hover:bg-gold/20 rounded transition">
+                            <i class="fas fa-download text-gold mr-3"></i>Download
+                        </a>
+                    </li>
+                    <li class="pt-3">
+                        <button class="w-full gradient-gold text-deep-black px-6 py-3 rounded-lg font-bold transition transform hover:scale-105">
+                            <i class="fas fa-user-plus mr-2"></i>Register / Submission
+                        </button>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const hamburgerIcon = document.getElementById('hamburger-icon');
+            const closeIcon = document.getElementById('close-icon');
+            
+            // Toggle menu visibility
+            mobileMenu.classList.toggle('hidden');
+            
+            // Toggle icons
+            hamburgerIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuButton = document.getElementById('mobile-menu-button');
+            
+            if (!mobileMenu.contains(event.target) && !menuButton.contains(event.target)) {
+                mobileMenu.classList.add('hidden');
+                document.getElementById('hamburger-icon').classList.remove('hidden');
+                document.getElementById('close-icon').classList.add('hidden');
+            }
+        });
+
+        // Close mobile menu when link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+                document.getElementById('hamburger-icon').classList.remove('hidden');
+                document.getElementById('close-icon').classList.add('hidden');
+            });
+        });
+    </script>
 
     <!-- HERO SECTION -->
     <section id="home" class="gradient-luxury text-white py-20 islamic-pattern" >
