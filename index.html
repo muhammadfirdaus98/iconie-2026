@@ -230,36 +230,43 @@
     </script>
 
     <!-- HERO SECTION -->
-    <section id="home" class="gradient-luxury text-white py-20 islamic-pattern" >
+    <section id="home" class="gradient-luxury text-white py-20 islamic-pattern">
         <div class="container mx-auto px-4 text-center">
             <div class="mb-8">
-                <span class="bg-gradient-gold text-deep-black px-8 py-3 rounded-full text-lg font-bold shadow-lg">
+                <span class="bg-gradient-gold text-deep-black px-6 md:px-8 py-3 rounded-full text-base md:text-lg font-bold shadow-lg">
                     ◆ 5TH ICONIE 2026 ◆
                 </span>
             </div>
-            <h1 class="luxury-title text-5xl md:text-6xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gold via-light-gold to-gold">
+            <h1 class="luxury-title text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gold via-light-gold to-gold px-4">
                 5th INTERNATIONAL CONFERENCE<br/>
                 ON ISLAMIC ECONOMICS 2026
             </h1>
-            <div class="flex justify-center items-center space-x-12 text-lg mb-8">
-                <div class="flex items-center space-x-3 bg-soft-black/50 px-6 py-4 rounded-lg border border-gold/30">
-                    <i class="fas fa-calendar-alt text-3xl text-gold"></i>
+            
+            <!-- Date & Venue Cards - Stacked on Mobile, Side by Side on Desktop -->
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 text-lg mb-8 max-w-4xl mx-auto">
+                <!-- Date Card -->
+                <div class="w-full md:w-auto flex items-center space-x-3 bg-soft-black/50 px-6 py-4 rounded-lg border border-gold/30 hover:border-gold transition">
+                    <i class="fas fa-calendar-alt text-3xl md:text-4xl text-gold"></i>
                     <div class="text-left">
                         <div class="font-bold text-gold">DATE:</div>
-                        <div>12 - 13 May 2026</div>
+                        <div class="text-base md:text-lg">12 - 13 May 2026</div>
                         <div class="text-sm text-gray-300">Tuesday - Wednesday</div>
                     </div>
                 </div>
-                <div class="flex items-center space-x-3 bg-soft-black/50 px-6 py-4 rounded-lg border border-gold/30">
-                    <i class="fas fa-map-marker-alt text-3xl text-gold"></i>
+                
+                <!-- Venue Card -->
+                <div class="w-full md:w-auto flex items-center space-x-3 bg-soft-black/50 px-6 py-4 rounded-lg border border-gold/30 hover:border-gold transition">
+                    <i class="fas fa-map-marker-alt text-3xl md:text-4xl text-gold"></i>
                     <div class="text-left">
                         <div class="font-bold text-gold">VENUE:</div>
-                        <div>Bahrain Institute of Banking</div>
+                        <div class="text-base md:text-lg">Bahrain Institute of Banking</div>
                         <div class="text-sm text-gray-300">and Finance, Bahrain</div>
                     </div>
                 </div>
             </div>
-            <a href="#submission" class="inline-block gradient-turquoise text-white px-8 py-4 rounded-lg text-lg font-bold transition transform hover:scale-105 hover:shadow-lg hover:shadow-turquoise/50 border-2 border-gold/50">
+            
+            <!-- Submit Button -->
+            <a href="#submission" class="inline-block gradient-turquoise text-white px-6 md:px-8 py-3 md:py-4 rounded-lg text-base md:text-lg font-bold transition transform hover:scale-105 hover:shadow-lg hover:shadow-turquoise/50 border-2 border-gold/50">
                 <i class="fas fa-paper-plane mr-2"></i>SUBMIT YOUR PAPER
             </a>
         </div>
