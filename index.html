@@ -25,78 +25,80 @@
         }
     </script>
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        .gradient-luxury {
-        background: linear-gradient(135deg, #0A0A0A 0%, #1a1a1a 50%, #0d9488 100%) !important;
-        }
-        .gradient-gold {
-            background: linear-gradient(135deg, #D4AF37 0%, #B8941F 100%) !important;
-        }
-        .gradient-turquoise {
-            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%) !important;
-        }
-        .bg-gradient-gold {
-            background: linear-gradient(135deg, #D4AF37 0%, #B8941F 100%) !important;
-        }
-        body {
-            font-family: 'Open Sans', sans-serif;
-        }
-        
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Poppins', sans-serif;
-        }
+    html {
+        scroll-behavior: smooth;
+    }
+    /* REVERSED: Blue/Turquoise on LEFT, Black on RIGHT */
+    .gradient-luxury {
+        background: linear-gradient(135deg, #0ad8c7f6 0%, #1a1a1a 50%, #0A0A0A 100%) !important;
+    }
+    .gradient-gold {
+        background: linear-gradient(135deg, #D4AF37 0%, #B8941F 100%) !important;
+    }
+    .gradient-turquoise {
+        background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%) !important;
+    }
+    .bg-gradient-gold {
+        background: linear-gradient(135deg, #D4AF37 0%, #B8941F 100%) !important;
+    }
+    
+    body {
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Poppins', sans-serif;
+    }
 
-        .luxury-title {
-            font-family: 'Playfair Display', serif;
-        }
+    .luxury-title {
+        font-family: 'Playfair Display', serif;
+    }
 
-        .gold-line {
-            position: relative;
-        }
-        .gold-line::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 3px;
-            background: linear-gradient(90deg, transparent, #D4AF37, transparent);
-        }
+    .gold-line {
+        position: relative;
+    }
+    .gold-line::after {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+    }
 
-        .ornament {
-            position: relative;
-        }
-        .ornament::before,
-        .ornament::after {
-            content: '◆';
-            color: #D4AF37;
-            font-size: 0.8em;
-            margin: 0 8px;
-        }
+    .ornament {
+        position: relative;
+    }
+    .ornament::before,
+    .ornament::after {
+        content: '◆';
+        color: #D4AF37;
+        font-size: 0.8em;
+        margin: 0 8px;
+    }
 
-        .hover-gold:hover {
-            color: #D4AF37;
-            transition: all 0.3s ease;
-        }
+    .hover-gold:hover {
+        color: #D4AF37 !important;
+        transition: all 0.3s ease;
+    }
 
-        .card-luxury {
-            border: 1px solid rgba(212, 175, 55, 0.2);
-            transition: all 0.3s ease;
-        }
+    .card-luxury {
+        border: 1px solid rgba(212, 175, 55, 0.2);
+        transition: all 0.3s ease;
+    }
 
-        .card-luxury:hover {
-            border-color: #D4AF37;
-            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
-            transform: translateY(-5px);
-        }
+    .card-luxury:hover {
+        border-color: #D4AF37;
+        box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+        transform: translateY(-5px);
+    }
 
-        .islamic-pattern {
-            background-image: 
-                repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(212, 175, 55, 0.03) 35px, rgba(212, 175, 55, 0.03) 70px);
-        }
+    .islamic-pattern {
+        background-image: 
+            repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(212, 175, 55, 0.03) 35px, rgba(212, 175, 55, 0.03) 70px);
+    }
     </style>
 </head>
 <body class="font-sans text-gray-800">
@@ -107,10 +109,11 @@
             <div class="flex justify-between items-center py-4">
                 <!-- Logos -->
                 <div class="flex items-center space-x-2 md:space-x-4">
-                    <img src="assets/logo/logo-uis-2025.png" class="h-8 md:h-12">
-                    <img src="assets/logo/ircief-logo.png" class="h-8 md:h-12">
-                    <img src="assets/logo/bibf-logo.png" class="h-8 md:h-12">
+                    <img src="assets/logo/logo-uis-2025.png" class="h-10 md:h-16">
+                    <img src="assets/logo/ircief-logo.svg" class="h-10 md:h-16">
+                    <img src="assets/logo/bibf-logo.png" class="h-10 md:h-16">
                 </div>
+
 
                 <!-- Desktop Navigation -->
                 <nav class="hidden lg:flex items-center space-x-6">
